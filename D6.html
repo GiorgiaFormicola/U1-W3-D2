@@ -102,7 +102,12 @@
          Scrivi una funzione che cambi il testo dei p figli di un div
         */
 
-      const changePcontent = function () {};
+      const changePcontent = function (text) {
+        const divParagraphs = document.querySelectorAll("div p");
+        return divParagraphs.forEach((paragraph) => (paragraph.innerText = text));
+      };
+
+      changePcontent("Questo è il NUOVO testo del paragrafo");
 
       /* ESERCIZIO 4
          Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
