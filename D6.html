@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>U1-W3-D2</title>
     <style>
       *,
       *::before,
@@ -79,7 +79,12 @@
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
 
-      const changeTitle = function () {};
+      const changeTitle = function (text) {
+        const h1 = document.querySelector("h1");
+        return (h1.innerText = text);
+      };
+
+      changeTitle("Questo è il NUOVO titolo della pagina");
 
       /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
